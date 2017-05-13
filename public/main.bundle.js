@@ -245,8 +245,8 @@ var AdminComponent = (function () {
         };
         this.authService.authenticateAdmin(admin).subscribe(function (data) {
             console.log(data);
-            _this.authService.storeAdminData(data.token, data.admin);
             if (data.success) {
+                _this.authService.storeAdminData(data.token, data.admin);
                 _this.flashMessage.show('Administrator login successful', { cssClass: 'alert-success', timeout: 3000 });
                 _this.router.navigate(['/dashboard']);
             }
@@ -977,8 +977,8 @@ var LoginComponent = (function () {
         };
         this.authService.authenticateUser(user).subscribe(function (data) {
             console.log(data);
-            _this.authService.storeUserData(data.token, data.user);
             if (data.success) {
+                _this.authService.storeUserData(data.token, data.user);
                 _this.flashMessage.show('Login successful', { cssClass: 'alert-success', timeout: 3000 });
                 _this.router.navigate(['/dashboard']);
             }

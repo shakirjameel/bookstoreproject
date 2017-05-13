@@ -30,8 +30,8 @@ export class AdminComponent implements OnInit {
 
     this.authService.authenticateAdmin(admin).subscribe(data => {
       console.log(data);
-      this.authService.storeAdminData(data.token, data.admin);
       if(data.success){
+        this.authService.storeAdminData(data.token, data.admin);
         this.flashMessage.show('Administrator login successful', {cssClass: 'alert-success', timeout: 3000});
         this.router.navigate(['/dashboard']);
       } else {

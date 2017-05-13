@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1483662e-b53c-4e8e-b52b-abd177fa12be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-src/src/app/components/home/home.component.html" afterPath="$PROJECT_DIR$/angular-src/src/app/components/home/home.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-src/src/app/components/admin/admin.component.ts" afterPath="$PROJECT_DIR$/angular-src/src/app/components/admin/admin.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-src/src/app/components/login/login.component.ts" afterPath="$PROJECT_DIR$/angular-src/src/app/components/login/login.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,31 +21,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/home/home.component.html">
+      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/login/login.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="260" column="0" lean-forward="true" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+            <state relative-caret-position="337">
+              <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/admin/admin.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#3;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#4;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#5;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#3;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#4;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#5;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,7 +77,6 @@
         <option value="$PROJECT_DIR$/angular-src/src/app/components/dashboard/dashboard.component.ts" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/genre/books/books.component.css" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/sem-books/sem-books.component.css" />
-        <option value="$PROJECT_DIR$/angular-src/src/app/components/admin/admin.component.ts" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/genre/books/details/details.component.ts" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/sem-books/detailsembook/detailsembook.component.ts" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/returnsembook/returnsembook.component.ts" />
@@ -99,7 +91,6 @@
         <option value="$PROJECT_DIR$/angular-src/src/app/components/notification-feed/notification-feed.component.html" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/returnbook/returnbook.component.css" />
         <option value="$PROJECT_DIR$/config/adminPassport.js" />
-        <option value="$PROJECT_DIR$/angular-src/src/app/components/login/login.component.ts" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/profile/profile.component.ts" />
         <option value="$PROJECT_DIR$/config/passport.js" />
         <option value="$PROJECT_DIR$/routes/admins.js" />
@@ -130,6 +121,8 @@
         <option value="$PROJECT_DIR$/angular-src/src/app/components/sem-genre/sem-genre.component.css" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/sem-books/detailsembook/detailsembook.component.html" />
         <option value="$PROJECT_DIR$/angular-src/src/app/components/home/home.component.html" />
+        <option value="$PROJECT_DIR$/angular-src/src/app/components/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/angular-src/src/app/components/admin/admin.component.ts" />
       </list>
     </option>
   </component>
@@ -298,7 +291,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,17 +467,17 @@
       <workItem from="1494444211028" duration="2614000" />
       <workItem from="1494557883691" duration="358000" />
       <workItem from="1494671788290" duration="4356000" />
-      <workItem from="1494676948536" duration="1183000" />
+      <workItem from="1494676948536" duration="1253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="454919000" />
+    <option name="totallyTimeSpent" value="454989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15300146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -498,7 +491,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -517,13 +509,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/dashboard/dashboard.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/profile/profile.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -650,13 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -790,6 +768,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1094">
           <caret line="376" column="1" lean-forward="false" selection-start-line="376" selection-start-column="1" selection-end-line="376" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -874,6 +853,24 @@
             <element signature="n#style#0;n#p#3;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#4;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#5;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/admin/admin.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
