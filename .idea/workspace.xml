@@ -24,18 +24,27 @@
         <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/home/home.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="549">
-              <caret line="251" column="0" lean-forward="true" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+              <caret line="260" column="0" lean-forward="true" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#3;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#4;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#5;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#3;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#4;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#5;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -465,12 +474,12 @@
       <workItem from="1494444211028" duration="2614000" />
       <workItem from="1494557883691" duration="358000" />
       <workItem from="1494671788290" duration="4356000" />
-      <workItem from="1494676948536" duration="74000" />
+      <workItem from="1494676948536" duration="1183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="453810000" />
+    <option name="totallyTimeSpent" value="454919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -844,18 +853,27 @@
     <entry file="file://$PROJECT_DIR$/angular-src/src/app/components/home/home.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
-          <caret line="251" column="0" lean-forward="true" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+          <caret line="260" column="0" lean-forward="true" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#4;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#5;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
