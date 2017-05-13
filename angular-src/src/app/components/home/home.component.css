@@ -158,6 +158,10 @@ h1 {
   color: #323232;
 }
 
+#contact-us p {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: medium;
+}
 
 footer {
   padding: 15px;
