@@ -1,0 +1,53 @@
+<div class="container">
+<div *ngIf="notShowEdit">
+<div>
+  <h4 class="page-header">Book Details</h4>
+  <ul class="list group">
+    <li class="list-group-item">Title : <strong>{{this.bookDetails.title}}</strong></li>
+    <li class="list-group-item">Author : <strong> {{this.bookDetails.author}}</strong></li>
+    <li class="list-group-item">Edition : <strong>{{this.bookDetails.edition}}</strong></li>
+    <li class="list-group-item">Description : <strong>{{this.bookDetails.description}}</strong></li>
+    <li class="list-group-item">Genre : <strong>{{this.bookDetails.genre}}</strong></li>
+    <li class="list-group-item">Publisher : <strong>{{this.bookDetails.publisher}}</strong></li>
+  </ul>
+  <div *ngIf="!showAdminStuff()">
+  <button class="btn btn-default" (click)="issueBook()">Issue Book</button>
+  </div>
+  <div style="margin-top: 20px" *ngIf="showAdminStuff()">
+    <button class="btn btn-default" (click)="showEditBook()">Edit Book Details</button>
+    <button class="btn btn-default" (click)="deleteBook(this.bookDetails._id)">Delete Book</button>
+  </div>
+</div>
+</div>
+
+<div *ngIf="!notShowEdit">
+<h4 class="page-header">Edit Book Details</h4>
+<form (submit)="onEditDetailsSubmit()">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" [(ngModel)]="title" name="title" class="form-control" value="{{title}}">
+  </div>
+  <div class="form-group">
+    <label>Author</label>
+    <input type="text" [(ngModel)]="author" name="author" class="form-control" value="{{author}}">
+  </div>
+  <div class="form-group">
+    <label>Edition</label>
+    <input type="text" [(ngModel)]="edition" name="edition" class="form-control" value="{{edition}}">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text" [(ngModel)]="description" name="description" class="form-control" value="{{description}}">
+  </div>
+  <div class="form-group">
+    <label>Publisher</label>
+    <input type="text" [(ngModel)]="publisher" name="publisher" class="form-control" value="{{publisher}}">
+  </div>
+  <div class="form-group">
+    <label>Image URL</label>
+    <input type="text" [(ngModel)]="image_url" name="image_url" class="form-control" value="{{image_url}}">
+  </div>
+  <input type="submit" class="btn btn-default" value="Submit">
+</form>
+</div>
+</div>

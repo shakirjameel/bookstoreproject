@@ -1,0 +1,12 @@
+.no-issue{
+  background-color: #e74c3c;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.issue {
+
+  background-color: #2ecc71;
+  color: #ffffff;
+  border-radius: 5px;
+}

@@ -1,0 +1,28 @@
+
+<div class="container" style="margin-top: 100px">
+  <h4>Weekly Return Feed</h4>
+  <hr>
+  <div class="col-md-offset-2 col-md-8">
+
+        <span id="post" *ngFor="let weeklyBookData of weeklyBookDatas; let isOdd=odd; let isEven=even "
+             [class.odd]="isOdd"
+             [class.even]="isEven">
+          <p style="margin-top: 10px" class="well well-lg"><strong>{{weeklyBookData.username}}</strong> - PRN {{weeklyBookData.prn}}
+            issued <strong>{{weeklyBookData.title}}</strong> on <strong>{{weeklyBookData.issue_date  | date:"MMM d, y"}}</strong>
+            which is due on <strong>{{weeklyBookData.return_date  | date:"MMM d, y"}}</strong>
+            <br>
+            <small class="small">{{weeklyBookData.username}}'s Contact Information</small>
+            <br>
+            <small class="small">Mobile Number : <strong>{{weeklyBookData.mobile}}</strong></small>
+            <small class="small">Email ID : <strong>{{weeklyBookData.email}}</strong></small>
+          </p>
+          <input class="btn btn-default" type="submit" value="Return Book"(click)="deleteReturnData(weeklyBookData)"/>
+        </span>
+
+  </div>
+</div>
+
+
+
+
+

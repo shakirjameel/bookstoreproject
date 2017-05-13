@@ -1,0 +1,43 @@
+<div class="container">
+<div *ngIf="user">
+  <h2 class="page-header">{{user.username}}</h2>
+  <ul class="list group">
+    <li class="list-group-item">Username : <strong>{{user.username}}</strong></li>
+    <li class="list-group-item">Email : <strong>{{user.email}}</strong></li>
+    <li class="list-group-item">Contact Number : <strong>{{user.mobile}}</strong></li>
+  </ul>
+</div>
+
+  <h3 class="page-header">Weekly Issues</h3>
+
+  <div *ngIf="weeklyIssues.length >= 1">
+    <div *ngFor="let weeklyIssue of weeklyIssues">
+      <p style="margin-top: 10px" class="well well-lg issue">You have issued <strong>{{weeklyIssue.title}}</strong>
+        on <strong>{{weeklyIssue.issue_date | date:"MMM d, y"}}</strong> which is due on <strong>{{weeklyIssue.return_date | date:"MMM d, y"}}</strong> !
+      </p>
+    </div>
+  </div>
+
+  <div *ngIf="weeklyIssues.length==0">
+    <p style="margin-top: 10px" class="well well-lg no-issue">You have made <strong>no weekly issue</strong> so far !</p>
+  </div>
+
+
+
+  <h3 class="page-header">Semester Issues</h3>
+
+  <div *ngIf="semIssues.length >= 1">
+      <div *ngFor="let semIssue of semIssues">
+        <p style="margin-top: 10px" class="well well-lg issue">You have issued <strong>{{semIssue.title}}</strong> of <strong>Semester {{semIssue.semester}}</strong>
+          on <strong>{{semIssue.issue_date | date:"MMM d, y"}}</strong> which is due on <strong>{{semIssue.return_date | date:"MMM d, y"}}</strong> !
+        </p>
+      </div>
+  </div>
+
+  <div *ngIf="semIssues.length==0">
+    <p style="margin-top: 10px" class="well well-lg no-issue">You have made <strong>no semester issue</strong> so far !</p>
+  </div>
+
+
+
+</div>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700');
+
+.notification {
+  background-color: #2ecc71;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Open Sans";
+}
+.feed {
+  height:425px;
+  width:100%;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+small {
+  font-size: small;
+}
+
+.no-notification{
+  background-color: #e74c3c;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: medium;
+}

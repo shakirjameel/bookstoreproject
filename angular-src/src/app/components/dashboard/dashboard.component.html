@@ -1,0 +1,20 @@
+<div class="container" style="margin-top: 100px">
+  <div class="row">
+    <div class="col-md-6 col-sm-6 user">
+      <input class="btn submit-btn btn-default dashButton sem-button" type="submit" value="SEMESTER ISSUE"(click)="onSemClicked()"/>
+    </div>
+    <div class="col-md-6 col-sm-6 user">
+      <input class="btn submit-btn btn-default dashButton weekly-button" type="submit" value="WEEKLY ISSUE"(click)="onWeeklyClicked()"/>
+    </div>
+  </div>
+<div *ngIf="showAdminStuff()">
+  <div class="row">
+    <div class="col-md-6 col-sm-6 admin">
+      <input class="btn submit-btn btn-default dashButton return-sem-button" type="submit" value="SEMESTER ISSUE RETURN"(click)="onReturnSemesterClicked()"/>
+    </div>
+    <div class="col-md-6 col-sm-6 admin">
+      <input class="btn submit-btn btn-default dashButton return-weekly-button" type="submit" value="WEEKLY ISSUE RETURN"(click)="onReturnWeeklyClicked()"/>
+    </div>
+  </div>
+</div>
+</div>

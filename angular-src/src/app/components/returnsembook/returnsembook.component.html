@@ -1,0 +1,31 @@
+
+<div class="container" style="margin-top: 100px">
+  <h4>Semester Return Feed</h4>
+  <hr>
+  <div class="col-md-offset-2 col-md-8">
+
+        <span id="post" *ngFor="let semesterBookData of semesterBookDatas; let isOdd=odd; let isEven=even "
+              [class.odd]="isOdd"
+              [class.even]="isEven">
+          <p style="margin-top: 10px" class="well well-lg"><strong>{{semesterBookData.username}}</strong> - PRN {{semesterBookData.prn}}
+            issued <strong>{{semesterBookData.title}}</strong>
+            of <strong>Semester{{semesterBookData.semester}}</strong>
+            on <strong>{{semesterBookData.issue_date  | date:"MMM d, y"}}</strong>
+            which is due on <strong>{{semesterBookData.return_date  | date:"MMM d, y"}}</strong>
+            <br>
+            <small class="small">{{semesterBookData.username}}'s Contact Information</small>
+            <br>
+            <small class="small">Mobile Number : <strong>{{semesterBookData.mobile}}</strong></small>
+            <small class="small">Email ID : <strong>{{semesterBookData.email}}</strong></small>
+          </p>
+          <input class="btn submit-btn" type="submit" value="Return Semester Book"(click)="deleteReturnData(semesterBookData)"/>
+        </span>
+
+  </div>
+</div>
+
+
+
+
+
+

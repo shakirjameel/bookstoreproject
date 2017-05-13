@@ -1,0 +1,17 @@
+html, body {
+
+  /* Set the height to match that of the viewport. */
+  height: 100vh;
+
+  /* Set the width to match that of the viewport. */
+  width: 100vw;
+
+  /* Remove any browser-default margins. */
+  margin-top: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "Open Sans",sans-serif;
+  font-size: 15px;
+}

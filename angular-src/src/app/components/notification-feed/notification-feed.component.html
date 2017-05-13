@@ -1,0 +1,28 @@
+<div class="container" xmlns="http://www.w3.org/1999/html">
+
+  <h3 class="page-header">Notification Feed</h3>
+
+  <div *ngIf="showAdminStuff()">
+    <form style="margin-bottom: 50px">
+      <textarea required class="form-control" maxlength="200" rows="3" placeholder="say something..." name="notification_data" [(ngModel)]="notification_data"></textarea>
+      <input class="btn submit-btn btn-default pull-right" type="submit" value="Post!" (click)="addNotification()"/>
+    </form>
+  </div>
+
+  <div class="feed" style="margin-top: 50px" *ngIf="notifications.length >= 1">
+    <div *ngFor="let notification of notifications; let isEven=even "
+    [class.odd]="isOdd"
+    [class.even]="isEven">
+      <p class="well well-lg notification" style="margin-top: 5px"><strong>{{notification.notification}}</strong><br>
+        <small>Created By : <strong>{{notification.created_by}}</strong></small>
+        <small> and Created On : <strong>{{notification.created_on | date: 'medium'}}</strong></small>
+      </p>
+    </div>
+  </div>
+
+  <div style="padding-top: 50px" *ngIf="notifications.length==0">
+    <p style="margin-top: 10px" class="well well-lg no-notification">There are <strong>no notifications</strong> !</p>
+  </div>
+
+
+</div>
