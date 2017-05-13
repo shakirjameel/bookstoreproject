@@ -5,7 +5,10 @@
   height:250px;
   text-align:center;
   line-height:1.1em;
-  margin: 30px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 70px;
 }
 
 input{
