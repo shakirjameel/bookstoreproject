@@ -84,6 +84,21 @@ router.put('/book/:_id',passport.authenticate('jwt', {session: false}), function
 });
 
 
+
+router.put('/book',passport.authenticate('jwt', {session: false}), function (req, res) {
+    // Body me type update karne ki request bhej rha hai. Make sure Express know what part of the object you want to access
+    //console.log(id);
+    //console.log(genre);
+    const updateBookGenreData = req.body;
+    Book.updateBookGenre(updateBookGenreData, {}, function (err, book) {
+        if(err){
+            console.log('Error is '+err);
+        }
+        res.json(book);
+    });
+});
+
+
 //delete book
 //Always put :_id in the URL. Express doesn't Recognize :id anymore and the objectID in Mongo also uses _id
 router.delete('/book/:_id', function (req, res) {

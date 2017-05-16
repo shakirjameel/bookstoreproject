@@ -848,6 +848,7 @@ var GenredetailComponent = (function () {
     GenredetailComponent.prototype.showEditGenre = function (genre) {
         this.id = genre._id;
         this.type = genre.type;
+        this.oldSelectedGenre = genre.type;
         //this.create_date = genre.create_date;
         this.showGenreEdit = true;
     };
@@ -860,9 +861,17 @@ var GenredetailComponent = (function () {
         };
         this.authService.updateWeeklyGenreDetails(updatedDetails).subscribe(function (data) {
             if (data.type) {
-                _this.router.navigate(['/weeklygenres']);
-                _this.flashMessage.show('The genre has been updated suscessfully!', { cssClass: 'alert-success', timeout: 3000 });
-                _this.router.navigate(['/weeklygenres']);
+                console.log('Old Selected Genre Is ' + _this.oldSelectedGenre);
+                _this.authService.updateBookGenre(updatedDetails, _this.oldSelectedGenre).subscribe(function (data) {
+                    if (data) {
+                        _this.router.navigate(['/weeklygenres']);
+                        _this.flashMessage.show('The genre has been updated suscessfully!', { cssClass: 'alert-success', timeout: 3000 });
+                        _this.router.navigate(['/weeklygenres']);
+                    }
+                    else {
+                        _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
+                    }
+                });
             }
             else {
                 _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
@@ -2355,6 +2364,19 @@ var AuthService = (function () {
         headers.append('Content-Type', 'application/json');
         return this.http.put('genres/weeklygenre/' + updatedDetails.id, updatedDetails, { headers: headers })
             .map(function (res) { return res.json(); });
+    };
+    AuthService.prototype.updateBookGenre = function (updatedDetails, oldGenre) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
+        this.loadAdminToken();
+        console.log('In update Book Genre');
+        headers.append('Content-Type', 'application/json');
+        headers.append('Authorization', this.adminAuthToken);
+        var updateBookGenre = {
+            oldGenre: oldGenre,
+            newGenre: updatedDetails.type
+        };
+        return (this.http.put('books/book', updateBookGenre, { headers: headers })
+            .map(function (res) { return res.json(); }));
     };
     AuthService.prototype.deleteWeeklyGenre = function (id) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();

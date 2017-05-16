@@ -147,6 +147,25 @@ export class AuthService {
       .map(res => res.json());
   }
 
+  updateBookGenre(updatedDetails, oldGenre){
+
+    const headers = new Headers();
+    this.loadAdminToken();
+    console.log('In update Book Genre');
+    headers.append('Content-Type','application/json');
+    headers.append('Authorization', this.adminAuthToken);
+
+    const updateBookGenre={
+      oldGenre: oldGenre,
+      newGenre: updatedDetails.type
+    };
+
+
+    return (this.http.put('books/book',updateBookGenre, {headers: headers})
+      .map(res => res.json()));
+  }
+
+
   deleteWeeklyGenre(id){
     const headers = new Headers();
     this.loadAdminToken();

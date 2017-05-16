@@ -31,10 +31,13 @@ export class GenredetailComponent implements OnInit {
       });
   }
 
+  oldSelectedGenre: String;
+
   showEditGenre(genre){
 
     this.id = genre._id;
     this.type = genre.type;
+    this.oldSelectedGenre = genre.type;
     //this.create_date = genre.create_date;
     this.showGenreEdit = true;
 
@@ -49,10 +52,16 @@ export class GenredetailComponent implements OnInit {
 
       this.authService.updateWeeklyGenreDetails(updatedDetails).subscribe(data => {
         if (data.type) {
-          this.router.navigate(['/weeklygenres']);
-          this.flashMessage.show('The genre has been updated suscessfully!', {cssClass: 'alert-success', timeout: 3000});
-          this.router.navigate(['/weeklygenres']);
-
+          console.log('Old Selected Genre Is '+this.oldSelectedGenre);
+          this.authService.updateBookGenre(updatedDetails,this.oldSelectedGenre).subscribe(data => {
+            if(data){
+              this.router.navigate(['/weeklygenres']);
+              this.flashMessage.show('The genre has been updated suscessfully!', {cssClass: 'alert-success', timeout: 3000});
+              this.router.navigate(['/weeklygenres']);
+            }else {
+              this.flashMessage.show(data.msg , {cssClass: 'alert-danger', timeout: 3000});
+            }
+          });
         } else {
           this.flashMessage.show(data.msg , {cssClass: 'alert-danger', timeout: 3000});
         }

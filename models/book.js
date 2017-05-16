@@ -83,6 +83,14 @@ module.exports.updateBook = function (id, book, options, callback) {
 };
 
 
+module.exports.updateBookGenre = function (updateBookGenreData, options, callback) {
+
+    console.log('In main update method the old genre is '+ updateBookGenreData.oldGenre + ' the new genre is '+ updateBookGenreData.newGenre);
+    const query= {genre: updateBookGenreData.oldGenre};
+    Book.updateMany(query, {genre:  updateBookGenreData.newGenre}, options, callback);
+};
+
+
 //Delete Book
 module.exports.removeBook = function (id, callback) {
     const query = {_id: id};
