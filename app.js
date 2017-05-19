@@ -50,10 +50,7 @@ app.use(bodyParser.json());
 //Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
-
 require('./config/passport')(passport); //(passport)
-
-
 
 app.use('/users', users);
 app.use('/admins', admins);
@@ -64,12 +61,10 @@ app.use('/sembooks', sembooks);
 app.use('/return', returnweeklybooks);
 app.use('/returnsemester', returnsemesterbooks);
 app.use('/',notifications);
-
 // Index Route
 app.get('/', function(req, res) {
     res.send('Invalid Endpoint');
 });
-
 // Start Server
 app.listen(port, function() {
     console.log('Server started on port '+port);

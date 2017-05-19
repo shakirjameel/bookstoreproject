@@ -11,8 +11,10 @@ module.exports = function(passport){
     const opts = {};
     opts.jwtFromRequest = ExtractJwt.fromAuthHeader();
     opts.secretOrKey = config.secret;
-    passport.use(new JwtStrategy(opts, function (jwt_payload, done) {
-        Admin.getAdminById(jwt_payload._doc._id, function (err, admin) {
+    passport.use(new JwtStrategy(opts,
+        function (jwt_payload, done) {
+        Admin.getAdminById(jwt_payload._doc._id,
+            function (err, admin) {
             if(err){
                 return done(err, false);
             }
