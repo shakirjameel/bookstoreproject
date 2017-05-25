@@ -45,8 +45,7 @@ export class AuthService {
     const user_id = user.id;
     console.log('In get Profile');
     console.log('User ID is - '+user_id);
-    return this.http.get('users/'+ user_id)
-      .map(res => res.json());
+    return user;
   }
 
   getSemIssueData(){

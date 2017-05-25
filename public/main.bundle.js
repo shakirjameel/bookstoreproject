@@ -2284,8 +2284,7 @@ var AuthService = (function () {
         var user_id = user.id;
         console.log('In get Profile');
         console.log('User ID is - ' + user_id);
-        return this.http.get('users/' + user_id)
-            .map(function (res) { return res.json(); });
+        return user;
     };
     AuthService.prototype.getSemIssueData = function () {
         var user = localStorage.getItem('user');
