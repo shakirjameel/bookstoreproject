@@ -10,17 +10,14 @@ import {Router} from  '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
-  user;
+  user=[];
   semIssues= [];
   weeklyIssues= [];
 
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
-    this.authService.getProfile().subscribe(profile => {
-      this.user = profile;
-      console.log(this.user.name);
-    });
+    this.user= this.authService.getProfile();
 
    this.authService.getSemIssueData().subscribe(issueData => {
      this.semIssues = issueData;
