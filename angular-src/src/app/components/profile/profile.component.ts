@@ -10,7 +10,7 @@ import {Router} from  '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
-  user: Object;
+  user;
   semIssues= [];
   weeklyIssues= [];
 
@@ -19,6 +19,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.authService.getProfile().subscribe(profile => {
       this.user = profile;
+      console.log(this.user.name);
     });
 
    this.authService.getSemIssueData().subscribe(issueData => {

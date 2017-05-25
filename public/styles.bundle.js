@@ -32,10 +32,10 @@ if(false) {
 
 exports = module.exports = __webpack_require__(328)();
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans);", ""]);
 
 // module
-exports.push([module.i, "html, body {\r\n\r\n  /* Set the height to match that of the viewport. */\r\n  height: 100vh;\r\n\r\n  /* Set the width to match that of the viewport. */\r\n  width: 100vw;\r\n\r\n  /* Remove any browser-default margins. */\r\n  margin-top: 0px;\r\n  padding: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  background-color: #ffffff;\r\n  font-family: \"Open Sans\",sans-serif;\r\n  font-size: 15px;\r\n}\r\n", ""]);
+exports.push([module.i, "\r\nhtml, body {\r\n\r\n\r\n  /* Set the height to match that of the viewport. */\r\n  height: 100vh;\r\n\r\n  /* Set the width to match that of the viewport. */\r\n  width: 100vw;\r\n\r\n  /* Remove any browser-default margins. */\r\n  margin-top: 0px;\r\n  padding: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  background-color: #ffffff;\r\n  font-family: 'Open Sans',sans-serif;\r\n  font-size: 15px;\r\n}\r\n", ""]);
 
 // exports
 
