@@ -39,10 +39,11 @@ export class AuthService {
 
 
   getProfile(){
-    console.log('In get Profile');
+
     const userData = localStorage.getItem('user');
     const user = JSON.parse(userData);
     const user_id = user.id;
+    console.log('In get Profile  '+user);
     console.log('User ID is - '+user_id);
     return this.http.get('users/'+ user_id)
       .map(res => res.json());
